@@ -1,0 +1,58 @@
+Functional Programming - Project Proposal
+Andi Willow Liu, November 10th 2023
+
+Haskell Minesweeper
+
+For this assignment, I aim to implement the classic game of minesweeper
+in Haskell. While the actual logic required to implement minesweeper is
+straightforward and relatively simple, this gives me additional freedom
+to focus on useful features and explore various Haskell libraries.
+
+Milestones have been divided below into three categories:
+    1. the minimum viable product,
+    2. expanding the featureset to improve QOL, and
+    3. stretch goals, especially those that would allow me to try new things.
+
+The categories are described below.
+
+Minimum viable product:
+The minimum viable product would be a console-based implementation of minesweeper.
+This version of minesweeper would likely have a static board size and number of mines,
+(i.e a 10x10 board with 10 mines). User input would be through keypresses only.
+The basic features of minesweeper will exist, i.e marking a square as a mine, displaying
+to the user the number of adjacent mines, clearing multiple cells when neccessary.
+
+I believe that this featureset will be relatively simple to acheive, especially since
+we have worked extensively with the Model-View_controller design pattern this quarter,
+as well as some sort of matrix representation of data (i.e wordle, mazes).
+
+Expanded featureset/stretch goals:
+Some of the features outlined here should be relatively simple, and some of them
+may end up falling under stretch goals. It is difficult to tell right now which
+will be easier and which will prove more time intensive, thus I am listing everything
+together, with the intention of implementing as many as possible.
+    1. Difficulty modes / custom game modes
+    2. Highlighting a particular cell's adjacent cell (actually super useful)
+    3. A graphic user interface that allows mouse input alongside keyboard input
+    4. Serialization - saving a game to disk, and loading a game in progress from disk
+    5. Puzzle mode - Given a partially revealed board with a unique solution, mark all 
+                     of the mines (i.e Tentaizu puzzle mode)
+    6. A leaderboard for each game mode, stored somewhere on disk
+
+
+Resources:
+I believe the main challenge will lie in implementing a graphic user interface - this will
+require some exploration and research on my own, since we haven't discussed such a topic
+in class. With a GUI comes assets and sprites, and I'd imagine that creating assets and
+integrating them in a neat fashion may be somewhat difficult, especially since I've not
+worked on a full-fledged game with graphics before. Serialization, in my mind, seems like
+a relatively easy task, but at the same time I would not be surprised if I ran into unexpected
+challenges related to the task. However, I am certain that the resources required are well docu-
+mented and readily available.
+
+I suppose the other challenge I might encounter is implementing everything in a "functional"
+sort of way. This quarter, I often tend to gravitate towards a more imperative/object-oriented
+approach even when it would be more appropriate to structure my logic functionally. As such, I
+hope that in working on this project, I will be able to focus more on using the techniques and
+concepts we have covered in class this quarter.
+
