@@ -1,0 +1,9 @@
+===== Project Feedback =====
+member: awliu2
+
+Loren's Feedback:
+Looks good. Good callout on the focus and difficulty of using a functional paradigm; having nice and clean code would almost certainly require a good understanding
+Bhakti's Feedback:
+Looks like a good plan! If you're planning on exploring GUIs, some of the good ones are gloss, monomer; if you're planning on exploring UIs in the terminal, something like brick might help
+
+Score: 3/3
