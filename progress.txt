@@ -1,0 +1,13 @@
+Current Progress:
+
+Rough working version of minesweeper board data structure. Not quite optimized yet, but it works.
+
+Next Steps:
+- Use State to keep track of board, instead of passing it around as a prop
+- Figure out how to recursively reveal squares when they have no adj. mines
+- Work on implementing KeyPresses and actually playing the game
+    - For now, just print the board to terminal
+
+
+- Save/load game state to/from local storage
+- GUI? (I.E with Gloss)? If time allows. Pretty busy with other courses as well.
