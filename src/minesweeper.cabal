@@ -5,8 +5,8 @@ version:            0.1.0.0
 executable minesweeper
   hs-source-dirs:   .
   main-is:          Main.hs
-  other-modules:    Board
+  other-modules:    Board, State
   -- The following allows a different name than `Main` for the main module
   ghc-options:      -main-is main
-  build-depends:    base, random, containers
+  build-depends:    base, random, containers, ansi-terminal, aeson, text, directory, bytestring
   default-language: GHC2021
