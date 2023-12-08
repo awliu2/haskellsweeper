@@ -1,0 +1,34 @@
+Final Report
+
+To play the game: navigate to `src`, then `cabal run minesweeper` (may have to install dependencies)
+To support save/loading  games: if the directory doesn't exist, create the directory `src/saveData`
+
+Code Organization
+
+`Board.hs` contains data structure and algorithms for board operations
+Board Level Operations
+    * Initializing a board with size (r, c)
+    * Setting bombs on the board given a list of positions, or randomly
+    * Instances for Encoding and Decoding a board to JSON
+    * Instance for showing the board
+    * Get + Set methods for board information: revealed cells, marked cells, bombs, game state (won/lost)
+
+Game Logic
+    * Move logic: Reveal a position, mark/unmark a position
+    
+
+'Main.hs' contains all user facing logic:
+Controllers:
+    * Main controller that runs the game
+    * menu controller: abstraction to provide UI for the various menus (main menu, pause menu, save/load/manage data menus)
+    * Input controllers: `getKey` used to read stdin
+ 
+Gameplay:
+    * data type `Model` contains a board, and the current cursor location
+    * methods to display the board + cursor position to screen
+
+Save File Management:
+    * Supports loads + saves from the savefile directory (hardcoded as relative directory `saveData`)
+    
+
+  
